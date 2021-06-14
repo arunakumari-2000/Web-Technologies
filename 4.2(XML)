@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE bookdetails SYSTEM "4.2.dtd">
+<?xml-stylesheet type="text/xsl" href="4.2.xsl"?>
+<bookdetails>
+<books>
+<title>Harry potter</title>
+<author>Jk Rowling</author>
+<isbn>1234</isbn>
+<publisher>Ronald</publisher>
+<edition>Edition-II</edition>
+<price>$40.00</price>
+</books>
+<books>
+<title>Wt</title>
+<author>william</author>
+<isbn>4567</isbn>
+<publisher>Thomas</publisher>
+<edition>Edition-I</edition>
+<price>$24.00</price>
+</books>
+</books></bookdetails>
+</bookdetails>
