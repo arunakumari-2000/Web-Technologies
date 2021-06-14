@@ -1,0 +1,72 @@
+<html>
+<head>
+	<title>JavaScript</title>
+	<script type="text/javascript">
+function myFunction() {
+  var s = document.getElementById('num').value;
+  var n=/^[0-9]+[0-9]*$/.test(s);
+  var str=" ";
+  if(!n){
+  	str="not a number";
+  }
+  else 
+  {
+  	if(s.length>3)
+  	{
+  		str="out of range";
+
+  	}
+  	else{
+  for(i=0;i<s.length;i++)
+  {
+  var res = s.charAt(i);
+  var n=parseInt(res);
+  switch(n)
+  {
+  	case 0: str=str+" "+"Zero";
+  	       break;
+  	case 1: str=str+" "+"One";
+  	       break;
+  	case 2: str=str+" "+"Two";
+  	       break;
+  	case 3: str=str+" "+"Three";
+  	       break;
+  	case 4: str=str+" "+"Four";
+  	       break;
+  	case 5: str=str+" "+"Five";
+  	       break;
+  	case 6: str=str+" "+"Six";
+  	       break;
+  	case 7: str=str+" "+"Seven";
+  	       break;
+  	case 8: str=str+" "+"Eight";
+  	       break;
+    case 9: str=str+" "+"Nine";
+  	       break;
+  	default:;
+  }
+}
+} 
+}
+document.getElementById('res').value=str;
+}
+
+
+</script>
+</head>
+
+
+<body>
+	<label><b>Enter a number</b></label>
+	<input type="text" name="num" id="num"/>
+	<br/>
+	<br/>
+
+	<label><b>Result</b></label>
+	<input type="text" name="res" value=" " id="res"/>
+	<br/>
+	<br/>
+	<button onclick="myFunction()">click to convert to words</button>
+
+</body>
+</html>
